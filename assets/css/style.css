@@ -1,0 +1,153 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: WorkSans-Italic;
+    src: url(/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: WorkSans;
+}
+
+    body::before {
+        content: "";
+        position: absolute;
+        background: url(/assets/images/background-pattern-desktop.svg);
+        width: 100vw;
+        height: 35%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+button {
+    font-family: inherit;
+}
+
+.faq-container {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin: 20px;
+    max-width: 460px;
+}
+
+.card-header {
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+    .card-header img {
+        width: 24px;
+    }
+
+    .card-header h1 {
+        margin: 0 0 0 15px;
+        font-size: 42px;
+    }
+
+.accordion {
+    display: block;
+}
+
+.accordion-item {
+    color: hsl(292, 16%, 49%);
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+    .accordion-item:last-of-type {
+        border-bottom: none;
+    }
+
+    .accordion-item:last-of-type .accordion-details {
+        margin-bottom: 0;
+    }
+
+.accordion-header {
+    margin: 0;
+}
+
+.accordion-button {
+    padding: 20px 0;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s;
+    text-align: left;
+    width: 100%;
+}
+
+    .accordion-button:hover {
+        color: hsl(281 83% 54%);
+    }
+
+    .accordion-button::after {
+        content: "";
+        background: url(/assets/images/icon-minus.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        min-width: 25px;
+        height: 25px;
+        margin-left: auto;
+        transition: all 0.2s;
+    }
+
+    .accordion-button.collapsed::after {
+        content: "";
+        background: url(/assets/images/icon-plus.svg);
+        background-size: 25px;
+        min-width: 25px;
+        height: 25px;
+        margin-left: auto;
+    }
+
+.accordion-details {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+    .accordion-details p {
+        margin: 0;
+    }
+
+    .accordion-details.collapse {
+        display: none;
+    }
+
+    .accordion-details.collapse.show {
+        display: block;
+        transition: all 0.2s;
+    }
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 425px) {
+    body::before {
+        background: url(/assets/images/background-pattern-mobile.svg);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
