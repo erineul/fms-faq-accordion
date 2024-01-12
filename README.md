@@ -26,21 +26,25 @@ Users should be able to:
 
 ### Screenshot
 Collapsed (Desktop)
+
 ![Preview for the solution (collapsed) on desktop for FAQ accordion coding challenge](./screenshots/collapsed-desktop.PNG)
 
 Expanded (Desktop)
+
 ![Preview for the solution (expanded) on desktop for FAQ accordion coding challenge](./screenshots/expanded-desktop.PNG)
 
 Collapsed (Mobile)
+  
 ![Preview for the solution (collapsed) on mobile for FAQ accordion coding challenge](./screenshots/collapsed-mobile.PNG)
 
 Expanded (Mobile)
+  
 ![Preview for the solution (expanded) on mobile for FAQ accordion coding challenge](./screenshots/expanded-mobile.PNG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/erineul/fms-faq-accordion)
-- Live Site URL: [Add live site URL here](https://fms-faq-accordion.vercel.app/)
+- Solution URL: [https://github.com/erineul/fms-faq-accordion](https://github.com/erineul/fms-faq-accordion)
+- Live Site URL: [https://fms-faq-accordion.vercel.app/](https://fms-faq-accordion.vercel.app/)
 
 ## My process
 
